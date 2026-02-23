@@ -40,9 +40,9 @@ const ContactFooter = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-heading font-bold text-lg mb-1">Call Us</h4>
-                                    <a href="tel:+919811131910" className="text-gray-400 text-sm hover:text-primary transition">+91-9811131910</a>
+                                    <a href="tel:01204818775" className="text-gray-400 text-sm hover:text-primary transition">0120-4818775</a>
                                     <span className="text-gray-400 text-sm mx-1">,</span>
-                                    <a href="tel:+919891003545" className="text-gray-400 text-sm hover:text-primary transition">+91-98910 03545</a>
+                                    <a href="tel:+919811131910" className="text-gray-400 text-sm hover:text-primary transition">+91-9811131910 (Sales)</a>
                                 </div>
                             </div>
                         </div>

@@ -46,12 +46,8 @@ const Navbar = () => {
                         <a href="mailto:contact@jpsenggmaterials.com" className="hover:text-primary transition-colors flex items-center gap-2">
                             <Mail size={12} className="text-primary" /> contact@jpsenggmaterials.com
                         </a>
-                        <a href="tel:+919811131910" className="hover:text-primary transition-colors flex items-center gap-2">
-                            <Phone size={12} className="text-primary" /> +91-9811131910
-                        </a>
-                        <span className="text-gray-500">|</span>
-                        <a href="tel:+919891003545" className="hover:text-primary transition-colors flex items-center gap-2">
-                            <Phone size={12} className="text-primary" /> +91-98910 03545
+                        <a href="tel:01204818775" className="hover:text-primary transition-colors flex items-center gap-2">
+                            <Phone size={12} className="text-primary" /> 0120-4818775, +91-9811131910 (Sales)
                         </a>
                     </div>
                 </div>
