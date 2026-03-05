@@ -198,6 +198,9 @@
             </div>
             <div
                 style="text-align: center; color: var(--text-muted); font-size: 0.8em; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05);">
+                <p style="margin-bottom: 6px;"><i class="fa-solid fa-file-invoice"
+                        style="color: var(--primary); margin-right: 6px;"></i> GST No: <strong
+                        style="color: rgba(255,255,255,0.8);">09AAGC1799L1ZU</strong></p>
                 <p>&copy; 2025 JPS Engineering Material Pvt Ltd. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">Designed and Developed by <a href="https://garvikadvertising.com"
                         target="_blank" style="color: var(--secondary); text-decoration: none; font-weight: 500;">Garvik
@@ -237,11 +240,9 @@
         window.addEventListener('scroll', () => {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(11, 17, 32, 0.95)';
-                navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+                navbar.classList.add('scrolled');
             } else {
-                navbar.style.background = 'rgba(11, 17, 32, 0.85)';
-                navbar.style.boxShadow = 'none';
+                navbar.classList.remove('scrolled');
             }
         });
     </script>
