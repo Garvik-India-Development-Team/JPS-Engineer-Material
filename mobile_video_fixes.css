@@ -1,0 +1,28 @@
+/* ====== Hero Video Brightness and Grid Removal ====== */
+.hero-video {
+    filter: brightness(0.85) saturate(1) !important;
+}
+
+.hero-overlay {
+    background: linear-gradient(105deg, rgba(1, 13, 24, 0.4) 40%, rgba(1, 13, 24, 0.1) 100%) !important;
+}
+
+.hero::after {
+    display: none !important;
+}
+
+/* ====== Preloader Removal (Fast Loading) ====== */
+.preloader {
+    display: none !important;
+}
+
+/* ====== Global Responsive Grid Fallbacks ====== */
+@media (max-width: 768px) {
+
+    [style*="grid-template-columns: repeat(2, 1fr)"],
+    [style*="grid-template-columns: repeat(4, 1fr)"],
+    [style*="grid-template-columns: repeat(auto-fit,"],
+    [style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+}
