@@ -15,8 +15,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .page-header {
@@ -67,7 +74,8 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/images/jps logo.png" alt="JPS Engineering Logo">
+                <img src="assets/images/jps-logo.webp" alt="JPS Engineering Logo" width="289" height="70"
+                    fetchpriority="high">
             </a>
 
             <ul class="nav-menu" id="navMenu">
@@ -258,52 +266,61 @@
         <div class="factory-masonry" data-aos="fade-up" data-aos-delay="100">
             <!-- Large landscape: 1.png (418KB) -->
             <div class="factory-item span-col-2">
-                <img src="assets/images/infrastructure/1.png" alt="JPS Factory Floor" loading="lazy">
+                <img src="assets/images/infrastructure/1.webp" alt="JPS Factory Floor" loading="lazy" width="800"
+                    height="400">
                 <div class="factory-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <!-- Portrait: 4.png (173KB) -->
             <div class="factory-item span-row-2">
-                <img src="assets/images/infrastructure/4.png" alt="JPS Manufacturing Unit" loading="lazy">
+                <img src="assets/images/infrastructure/4.webp" alt="JPS Manufacturing Unit" loading="lazy" width="400"
+                    height="600">
                 <div class="factory-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <!-- Standard: 2.png -->
             <div class="factory-item">
-                <img src="assets/images/infrastructure/2.png" alt="CNC Machines" loading="lazy">
+                <img src="assets/images/infrastructure/2.webp" alt="CNC Machines" loading="lazy" width="400"
+                    height="300">
                 <div class="factory-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <!-- Standard: 3.png -->
             <div class="factory-item">
-                <img src="assets/images/infrastructure/3.png" alt="Precision Machining" loading="lazy">
+                <img src="assets/images/infrastructure/3.webp" alt="Precision Machining" loading="lazy" width="400"
+                    height="300">
                 <div class="factory-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <!-- Standard: 5.png -->
             <div class="factory-item">
-                <img src="assets/images/infrastructure/5.png" alt="VMC Operations" loading="lazy">
+                <img src="assets/images/infrastructure/5.webp" alt="VMC Operations" loading="lazy" width="400"
+                    height="300">
                 <div class="factory-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <!-- Standard: 6.png -->
             <div class="factory-item">
-                <img src="assets/images/infrastructure/6.png" alt="Quality Testing" loading="lazy">
+                <img src="assets/images/infrastructure/6.webp" alt="Quality Testing" loading="lazy" width="400"
+                    height="300">
                 <div class="factory-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <!-- Large: 8.png (957KB - biggest file, likely wide/detailed) -->
             <div class="factory-item span-col-2">
-                <img src="assets/images/infrastructure/8.png" alt="Production Floor" loading="lazy">
+                <img src="assets/images/infrastructure/8.webp" alt="Production Floor" loading="lazy" width="800"
+                    height="400">
                 <div class="factory-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <!-- Standard: 7.png -->
             <div class="factory-item">
-                <img src="assets/images/infrastructure/7.png" alt="Tool Room" loading="lazy">
+                <img src="assets/images/infrastructure/7.webp" alt="Tool Room" loading="lazy" width="400" height="300">
                 <div class="factory-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <!-- Standard: 9.png -->
             <div class="factory-item">
-                <img src="assets/images/infrastructure/9.png" alt="Warehousing" loading="lazy">
+                <img src="assets/images/infrastructure/9.webp" alt="Warehousing" loading="lazy" width="400"
+                    height="300">
                 <div class="factory-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
             <!-- Small: 10.png -->
             <div class="factory-item">
-                <img src="assets/images/infrastructure/10.png" alt="Packaging Unit" loading="lazy">
+                <img src="assets/images/infrastructure/10.webp" alt="Packaging Unit" loading="lazy" width="400"
+                    height="300">
                 <div class="factory-overlay"><i class="fa-solid fa-expand"></i></div>
             </div>
         </div>
@@ -359,7 +376,7 @@
         </div>
     </section>
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
@@ -382,7 +399,8 @@
                 </div>
                 <div>
                     <h4 class="footer-heading">Contact</h4>
-                    <p class="footer-contact"><i class="fa-solid fa-location-dot"></i> 4/47, Ajanta Textile Compound Site -2, Industrial Area, Mohan Nagar Ghaziabad, UP-201007</p>
+                    <p class="footer-contact"><i class="fa-solid fa-location-dot"></i> 4/47, Ajanta Textile Compound
+                        Site -2, Industrial Area, Mohan Nagar Ghaziabad, UP-201007</p>
                     <p class="footer-contact"><i class="fa-solid fa-phone"></i> 0120-4818775, +91-9811131910 (Sales)</p>
                     <p class="footer-contact"><i class="fa-solid fa-envelope"></i> contact@jpsenggmaterials.com</p>
                     <h4 class="footer-heading" style="margin-top: 25px;">Follow Us</h4>
@@ -397,7 +415,8 @@
             <div class="footer-bottom">
                 <p><i class="fa-solid fa-file-invoice"></i> GST No: <strong>09AAGC1799L1ZU</strong></p>
                 <p>&copy; 2025 JPS Engineering Material Pvt Ltd. All Rights Reserved.</p>
-                <p>Designed and Developed by <a href="https://garvikadvertising.com" target="_blank">Garvik India</a></p>
+                <p>Designed and Developed by <a href="https://garvikadvertising.com" target="_blank">Garvik India</a>
+                </p>
             </div>
         </div>
     </footer>
@@ -412,8 +431,8 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script>
         AOS.init({
             duration: 800,

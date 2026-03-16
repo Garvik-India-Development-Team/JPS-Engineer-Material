@@ -1,7 +1,6 @@
 /* assets/css/style.css — JPS Engineering Industrial Theme */
 
-/* ====== Google Fonts ====== */
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 
 /* ====== CSS Variables ====== */
 :root {
@@ -1522,7 +1521,9 @@ footer i {
 .nav-link:hover,
 .nav-link.active {
     color: var(--primary) !important;
-}/* ====== Light Footer Updates ====== */
+}
+
+/* ====== Light Footer Updates ====== */
 .site-footer {
     background: #FFFFFF;
     /* Light theme background */
@@ -1645,6 +1646,7 @@ footer i {
     background: #fff;
     color: var(--secondary) !important;
 }
+
 /* ====== Hero Video Brightness and Grid Removal ====== */
 .hero-video {
     filter: brightness(0.85) saturate(1) !important;

@@ -17,9 +17,16 @@
         href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
     <!-- AOS Animation -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    </noscript>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
@@ -45,7 +52,8 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/images/jps logo.png" alt="JPS Engineering Logo">
+                <img src="assets/images/jps-logo.webp" alt="JPS Engineering Logo" width="289" height="70"
+                    fetchpriority="high">
             </a>
 
             <ul class="nav-menu" id="navMenu">
@@ -118,7 +126,7 @@
                     </div>
                 </div>
                 <div data-aos="fade-left">
-                    <img src="assets/images/jps logo.png" alt="JPS Infrastructure"
+                    <img src="assets/images/jps-logo.webp" alt="JPS Infrastructure" width="400" height="200"
                         style="border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); padding: 20px;">
                 </div>
             </div>
@@ -305,7 +313,7 @@
                 <!-- Asset 1 â€” spans 2 cols (hero shot) -->
                 <div style="grid-column: span 2; position: relative; overflow: hidden; border-radius: 12px; cursor: pointer;"
                     class="team-photo-card">
-                    <img src="assets/images/team/asset-1.jpeg" alt="JPS CNC Machining Floor"
+                    <img src="assets/images/team/asset-1.webp" alt="JPS CNC Machining Floor" width="800" height="260"
                         style="width:100%; height:100%; object-fit:cover; transition: transform 0.5s ease;">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus" style="font-size:1.8rem; color:#fff;"></i>
@@ -318,7 +326,7 @@
                 <!-- Asset 2 -->
                 <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer;"
                     class="team-photo-card">
-                    <img src="assets/images/team/asset-2.jpeg" alt="JPS Engineering Workshop"
+                    <img src="assets/images/team/asset-2.webp" alt="JPS Engineering Workshop" width="400" height="260"
                         style="width:100%; height:100%; object-fit:cover; transition: transform 0.5s ease;">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus" style="font-size:1.5rem; color:#fff;"></i>
@@ -330,7 +338,8 @@
                 <!-- Asset 3 -->
                 <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer;"
                     class="team-photo-card">
-                    <img src="assets/images/team/asset-3.jpeg" alt="JPS Manufacturing Operations"
+                    <img src="assets/images/team/asset-3.webp" alt="JPS Manufacturing Operations" width="400"
+                        height="260"
                         style="width:100%; height:100%; object-fit:cover; transition: transform 0.5s ease;">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus" style="font-size:1.5rem; color:#fff;"></i>
@@ -342,7 +351,7 @@
                 <!-- Asset 4 -->
                 <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer;"
                     class="team-photo-card">
-                    <img src="assets/images/team/asset-4.jpeg" alt="JPS Precision Work"
+                    <img src="assets/images/team/asset-4.webp" alt="JPS Precision Work" width="400" height="260"
                         style="width:100%; height:100%; object-fit:cover; transition: transform 0.5s ease;">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus" style="font-size:1.5rem; color:#fff;"></i>
@@ -355,7 +364,7 @@
                 <!-- Asset 5 -->
                 <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer;"
                     class="team-photo-card">
-                    <img src="assets/images/team/asset-5.jpeg" alt="JPS Quality Check"
+                    <img src="assets/images/team/asset-5.webp" alt="JPS Quality Check" width="400" height="260"
                         style="width:100%; height:100%; object-fit:cover; transition: transform 0.5s ease;">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus" style="font-size:1.5rem; color:#fff;"></i>
@@ -383,7 +392,7 @@
                 data-aos="fade-up" data-aos-delay="100">
                 <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer;"
                     class="team-photo-card">
-                    <img src="assets/images/team/R&D-1.jpeg" alt="JPS R&D Team at Work"
+                    <img src="assets/images/team/RD-1.webp" alt="JPS R&D Team at Work" width="500" height="340"
                         style="width:100%; height:100%; object-fit:cover; object-position: center 20%; transition: transform 0.5s ease;">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus" style="font-size:1.8rem; color:#fff;"></i>
@@ -394,7 +403,7 @@
                 </div>
                 <div style="position: relative; overflow: hidden; border-radius: 12px; cursor: pointer;"
                     class="team-photo-card">
-                    <img src="assets/images/team/R&D-2.jpeg" alt="JPS R&D Team Engineering"
+                    <img src="assets/images/team/RD-2.webp" alt="JPS R&D Team Engineering" width="500" height="340"
                         style="width:100%; height:100%; object-fit:cover; object-position: center 20%; transition: transform 0.5s ease;">
                     <div class="team-photo-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus" style="font-size:1.8rem; color:#fff;"></i>
@@ -525,86 +534,90 @@
                         </div>
                     </div>
                 </div>
-                    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <a href="index.html" class="logo footer-logo">
-                        <img src="assets/images/jps logo.png" alt="JPS Engineering Logo" style="height: 50px;">
-                    </a>
-                    <p class="footer-desc">
-                        Your trusted partner for high-quality engineering materials and components.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="footer-heading">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="applications.html">Applications</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-heading">Contact</h4>
-                    <p class="footer-contact"><i class="fa-solid fa-location-dot"></i> 4/47, Ajanta Textile Compound Site -2, Industrial Area, Mohan Nagar Ghaziabad, UP-201007</p>
-                    <p class="footer-contact"><i class="fa-solid fa-phone"></i> 0120-4818775, +91-9811131910 (Sales)</p>
-                    <p class="footer-contact"><i class="fa-solid fa-envelope"></i> contact@jpsenggmaterials.com</p>
-                    <h4 class="footer-heading" style="margin-top: 25px;">Follow Us</h4>
-                    <div class="footer-social">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <!-- Footer -->
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="footer-grid">
+                            <div>
+                                <a href="index.html" class="logo footer-logo">
+                                    <img src="assets/images/jps-logo.webp" alt="JPS Engineering Logo"
+                                        style="height: 50px;" width="207" height="50" loading="lazy">
+                                </a>
+                                <p class="footer-desc">
+                                    Your trusted partner for high-quality engineering materials and components.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="footer-heading">Quick Links</h4>
+                                <ul class="footer-links">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="products.html">Products</a></li>
+                                    <li><a href="applications.html">Applications</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="footer-heading">Contact</h4>
+                                <p class="footer-contact"><i class="fa-solid fa-location-dot"></i> 4/47, Ajanta Textile
+                                    Compound Site -2, Industrial Area, Mohan Nagar Ghaziabad, UP-201007</p>
+                                <p class="footer-contact"><i class="fa-solid fa-phone"></i> 0120-4818775, +91-9811131910
+                                    (Sales)</p>
+                                <p class="footer-contact"><i class="fa-solid fa-envelope"></i>
+                                    contact@jpsenggmaterials.com</p>
+                                <h4 class="footer-heading" style="margin-top: 25px;">Follow Us</h4>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p><i class="fa-solid fa-file-invoice"></i> GST No: <strong>09AAGC1799L1ZU</strong></p>
+                            <p>&copy; 2025 JPS Engineering Material Pvt Ltd. All Rights Reserved.</p>
+                            <p>Designed and Developed by <a href="https://garvikadvertising.com" target="_blank">Garvik
+                                    India</a></p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p><i class="fa-solid fa-file-invoice"></i> GST No: <strong>09AAGC1799L1ZU</strong></p>
-                <p>&copy; 2025 JPS Engineering Material Pvt Ltd. All Rights Reserved.</p>
-                <p>Designed and Developed by <a href="https://garvikadvertising.com" target="_blank">Garvik India</a></p>
-            </div>
-        </div>
-    </footer>
+                </footer>
 
-        <!-- Scripts -->
-        <!-- Back to Top -->
-        <button id="back-to-top" title="Back to Top">
-            <i class="fa-solid fa-arrow-up"></i>
-        </button>
+                <!-- Scripts -->
+                <!-- Back to Top -->
+                <button id="back-to-top" title="Back to Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
 
-        <script src="assets/js/main.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 800,
-                offset: 100,
-                once: true
-            });
-            const moreDropdown = document.getElementById('moreDropdown');
-            if (moreDropdown) {
-                moreDropdown.querySelector('.nav-link').addEventListener('click', (e) => {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        moreDropdown.classList.toggle('open');
+                <script src="assets/js/main.js" defer></script>
+                <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+                <script>
+                    AOS.init({
+                        duration: 800,
+                        offset: 100,
+                        once: true
+                    });
+                    const moreDropdown = document.getElementById('moreDropdown');
+                    if (moreDropdown) {
+                        moreDropdown.querySelector('.nav-link').addEventListener('click', (e) => {
+                            if (window.innerWidth <= 768) {
+                                e.preventDefault();
+                                moreDropdown.classList.toggle('open');
+                            }
+                        });
                     }
-                });
-            }
 
-            // Navbar Scroll Effect
-            const navbar = document.getElementById('navbar');
-            if (navbar) {
-                window.addEventListener('scroll', () => {
-                    if (window.scrollY > 60) {
-                        navbar.classList.add('scrolled');
-                    } else {
-                        navbar.classList.remove('scrolled');
+                    // Navbar Scroll Effect
+                    const navbar = document.getElementById('navbar');
+                    if (navbar) {
+                        window.addEventListener('scroll', () => {
+                            if (window.scrollY > 60) {
+                                navbar.classList.add('scrolled');
+                            } else {
+                                navbar.classList.remove('scrolled');
+                            }
+                        });
                     }
-                });
-            }
-        </script>
+                </script>
 </body>
 
 </html>
-

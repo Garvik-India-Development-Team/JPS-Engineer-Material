@@ -15,8 +15,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .page-header {
@@ -99,7 +106,8 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/images/jps logo.png" alt="JPS Engineering Logo">
+                <img src="assets/images/jps-logo.webp" alt="JPS Engineering Logo" width="289" height="70"
+                    fetchpriority="high">
             </a>
 
             <ul class="nav-menu" id="navMenu">
@@ -230,7 +238,7 @@
         </div>
     </section>
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
@@ -253,7 +261,8 @@
                 </div>
                 <div>
                     <h4 class="footer-heading">Contact</h4>
-                    <p class="footer-contact"><i class="fa-solid fa-location-dot"></i> 4/47, Ajanta Textile Compound Site -2, Industrial Area, Mohan Nagar Ghaziabad, UP-201007</p>
+                    <p class="footer-contact"><i class="fa-solid fa-location-dot"></i> 4/47, Ajanta Textile Compound
+                        Site -2, Industrial Area, Mohan Nagar Ghaziabad, UP-201007</p>
                     <p class="footer-contact"><i class="fa-solid fa-phone"></i> 0120-4818775, +91-9811131910 (Sales)</p>
                     <p class="footer-contact"><i class="fa-solid fa-envelope"></i> contact@jpsenggmaterials.com</p>
                     <h4 class="footer-heading" style="margin-top: 25px;">Follow Us</h4>
@@ -268,7 +277,8 @@
             <div class="footer-bottom">
                 <p><i class="fa-solid fa-file-invoice"></i> GST No: <strong>09AAGC1799L1ZU</strong></p>
                 <p>&copy; 2025 JPS Engineering Material Pvt Ltd. All Rights Reserved.</p>
-                <p>Designed and Developed by <a href="https://garvikadvertising.com" target="_blank">Garvik India</a></p>
+                <p>Designed and Developed by <a href="https://garvikadvertising.com" target="_blank">Garvik India</a>
+                </p>
             </div>
         </div>
     </footer>
@@ -278,8 +288,8 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script>
         AOS.init({ duration: 800, offset: 100, once: true });
 

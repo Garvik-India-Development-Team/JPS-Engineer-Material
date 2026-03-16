@@ -15,8 +15,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    </noscript>
     <!-- GLightbox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
@@ -114,7 +121,8 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/images/jps logo.png" alt="JPS Engineering Logo">
+                <img src="assets/images/jps-logo.webp" alt="JPS Engineering Logo" width="289" height="70"
+                    fetchpriority="high">
             </a>
 
             <ul class="nav-menu" id="navMenu">
@@ -181,108 +189,120 @@
 
             <div class="gallery-grid">
                 <!-- Gallery Item 1 - Nylon Gears -->
-                <a href="assets/images/products/nylon-gears.jpeg" class="gallery-item glightbox"
+                <a href="assets/images/products/nylon-gears.webp" class="gallery-item glightbox"
                     data-glightbox="title: Nylon Gears Machine; description: High-quality nylon gears for printing applications">
-                    <img src="assets/images/products/nylon-gears.jpeg" alt="Nylon Gears Machine">
+                    <img src="assets/images/products/nylon-gears.webp" alt="Nylon Gears Machine" width="400"
+                        height="250" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 2 - Jig Fixtures -->
-                <a href="assets/images/products/jig-fixtures.png" class="gallery-item glightbox"
+                <a href="assets/images/products/jig-fixtures.webp" class="gallery-item glightbox"
                     data-glightbox="title: Jigs & Fixtures; description: Precision engineered jigs for industrial applications">
-                    <img src="assets/images/products/jig-fixtures.png" alt="Jigs And Fixtures">
+                    <img src="assets/images/products/jig-fixtures.webp" alt="Jigs And Fixtures" width="400" height="250"
+                        loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 3 - Plastic Machine Parts -->
-                <a href="assets/images/products/plastic-machine-parts.jpg" class="gallery-item glightbox"
+                <a href="assets/images/products/plastic-machine-parts.webp" class="gallery-item glightbox"
                     data-glightbox="title: Plastic Machine Parts; description: Custom plastic components for industrial use">
-                    <img src="assets/images/products/plastic-machine-parts.jpg" alt="Plastic Machine Parts">
+                    <img src="assets/images/products/plastic-machine-parts.webp" alt="Plastic Machine Parts" width="400"
+                        height="250" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 4 - Painting Jig Fixtures -->
-                <a href="assets/images/products/painting-jig-fixtures.jpg" class="gallery-item glightbox"
+                <a href="assets/images/products/painting-jig-fixtures.webp" class="gallery-item glightbox"
                     data-glightbox="title: Robotics Painting Jig; description: Aluminium painting jig fixtures for automated assembly">
-                    <img src="assets/images/products/painting-jig-fixtures.jpg" alt="Robotics Painting Jig Fixtures">
+                    <img src="assets/images/products/painting-jig-fixtures.webp" alt="Robotics Painting Jig Fixtures"
+                        width="400" height="250" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 5 - Ropeway Trolley -->
-                <a href="assets/images/products/ropeway-trolley.png" class="gallery-item glightbox"
+                <a href="assets/images/products/ropeway-trolley.webp" class="gallery-item glightbox"
                     data-glightbox="title: Ropeway Udan Khatola; description: Complete Udan Khatola trolley systems">
-                    <img src="assets/images/products/ropeway-trolley.png" alt="Ropeway Udan Khatola Trolley">
+                    <img src="assets/images/products/ropeway-trolley.webp" alt="Ropeway Udan Khatola Trolley"
+                        width="400" height="250" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 6 - PEEK Sheet -->
-                <a href="assets/images/products/peek-sheet.jpg" class="gallery-item glightbox"
+                <a href="assets/images/products/peek-sheet.webp" class="gallery-item glightbox"
                     data-glightbox="title: PEEK Sheet & Rod; description: High-performance PEEK material sheets">
-                    <img src="assets/images/products/peek-sheet.jpg" alt="PEEK Sheet And Rod">
+                    <img src="assets/images/products/peek-sheet.webp" alt="PEEK Sheet And Rod" width="400" height="250"
+                        loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 7 - Plastic Bushes -->
-                <a href="assets/images/products/plastic-bushes.png" class="gallery-item glightbox"
+                <a href="assets/images/products/plastic-bushes.webp" class="gallery-item glightbox"
                     data-glightbox="title: Industrial Plastic Bushes; description: Self-lubricating plastic bushes for machinery">
-                    <img src="assets/images/products/plastic-bushes.png" alt="Industrial Plastic Bushes">
+                    <img src="assets/images/products/plastic-bushes.webp" alt="Industrial Plastic Bushes" width="400"
+                        height="250" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 8 - Plastic Sprocket -->
-                <a href="assets/images/products/plastic-sprocket.jpg" class="gallery-item glightbox"
+                <a href="assets/images/products/plastic-sprocket.webp" class="gallery-item glightbox"
                     data-glightbox="title: Plastic Machine Sprocket; description: Industrial plastic sprockets with 19 teeth">
-                    <img src="assets/images/products/plastic-sprocket.jpg" alt="Plastic Machine Sprocket">
+                    <img src="assets/images/products/plastic-sprocket.webp" alt="Plastic Machine Sprocket" width="400"
+                        height="250" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 9 - Nylon Base Plate -->
-                <a href="assets/images/products/nylon-base-plate.jpg" class="gallery-item glightbox"
+                <a href="assets/images/products/nylon-base-plate.webp" class="gallery-item glightbox"
                     data-glightbox="title: Nylon Machine Base Plate; description: Precision base plates for industrial machines">
-                    <img src="assets/images/products/nylon-base-plate.jpg" alt="Nylon Machine Base Plate">
+                    <img src="assets/images/products/nylon-base-plate.webp" alt="Nylon Machine Base Plate" width="400"
+                        height="250" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 10 - UHMW PE Seal -->
-                <a href="assets/images/products/uhmw-pe-seal.jpeg" class="gallery-item glightbox"
+                <a href="assets/images/products/uhmw-pe-seal.webp" class="gallery-item glightbox"
                     data-glightbox="title: UHMW PE Pistol Seal; description: High-grade seals for industrial applications">
-                    <img src="assets/images/products/uhmw-pe-seal.jpeg" alt="UHMW PE Pistol Seal">
+                    <img src="assets/images/products/uhmw-pe-seal.webp" alt="UHMW PE Pistol Seal" width="400"
+                        height="250" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 11 - Nylon Machine Gear -->
-                <a href="assets/images/products/nylon-machine-gear.jpeg" class="gallery-item glightbox"
+                <a href="assets/images/products/nylon-machine-gear.webp" class="gallery-item glightbox"
                     data-glightbox="title: Nylon Machine Gear; description: High-strength nylon gears for printing machines">
-                    <img src="assets/images/products/nylon-machine-gear.jpeg" alt="Nylon Machine Gear">
+                    <img src="assets/images/products/nylon-machine-gear.webp" alt="Nylon Machine Gear" width="400"
+                        height="250" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
                 </a>
 
                 <!-- Gallery Item 12 - Ropeway Cabin -->
-                <a href="assets/images/products/ropeway-cabin.png" class="gallery-item glightbox"
+                <a href="assets/images/products/ropeway-cabin.webp" class="gallery-item glightbox"
                     data-glightbox="title: Indian Cabin Ropeway; description: Complete cabin ropeway systems">
-                    <img src="assets/images/products/ropeway-cabin.png" alt="Indian Cabin Ropeway">
+                    <img src="assets/images/products/ropeway-cabin.webp" alt="Indian Cabin Ropeway" width="400"
+                        height="250" loading="lazy">
                     <div class="gallery-overlay">
                         <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
                     </div>
@@ -293,7 +313,7 @@
         </div>
     </section>
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
@@ -316,7 +336,8 @@
                 </div>
                 <div>
                     <h4 class="footer-heading">Contact</h4>
-                    <p class="footer-contact"><i class="fa-solid fa-location-dot"></i> 4/47, Ajanta Textile Compound Site -2, Industrial Area, Mohan Nagar Ghaziabad, UP-201007</p>
+                    <p class="footer-contact"><i class="fa-solid fa-location-dot"></i> 4/47, Ajanta Textile Compound
+                        Site -2, Industrial Area, Mohan Nagar Ghaziabad, UP-201007</p>
                     <p class="footer-contact"><i class="fa-solid fa-phone"></i> 0120-4818775, +91-9811131910 (Sales)</p>
                     <p class="footer-contact"><i class="fa-solid fa-envelope"></i> contact@jpsenggmaterials.com</p>
                     <h4 class="footer-heading" style="margin-top: 25px;">Follow Us</h4>
@@ -331,7 +352,8 @@
             <div class="footer-bottom">
                 <p><i class="fa-solid fa-file-invoice"></i> GST No: <strong>09AAGC1799L1ZU</strong></p>
                 <p>&copy; 2025 JPS Engineering Material Pvt Ltd. All Rights Reserved.</p>
-                <p>Designed and Developed by <a href="https://garvikadvertising.com" target="_blank">Garvik India</a></p>
+                <p>Designed and Developed by <a href="https://garvikadvertising.com" target="_blank">Garvik India</a>
+                </p>
             </div>
         </div>
     </footer>
@@ -341,8 +363,8 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script>
         AOS.init({ duration: 800, offset: 100, once: true });

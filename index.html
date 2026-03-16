@@ -38,9 +38,16 @@
         href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
     <!-- AOS Animation -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    </noscript>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -86,7 +93,8 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/images/jps logo.png" alt="JPS Engineering Logo">
+                <img src="assets/images/jps-logo.webp" alt="JPS Engineering Logo" width="289" height="70"
+                    fetchpriority="high">
             </a>
 
             <ul class="nav-menu" id="navMenu">
@@ -120,7 +128,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <video autoplay muted loop playsinline class="hero-video">
+        <video autoplay muted loop playsinline class="hero-video" preload="metadata">
             <source src="assets/videos/JPS-engineering-vieo.mp4" type="video/mp4">
             <source src="https://videos.pexels.com/video-files/5824586/5824586-hd_1920_1080_25fps.mp4" type="video/mp4">
         </video>
@@ -158,13 +166,14 @@
                 <!-- Product Image Grid -->
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; padding: 10px;"
                     data-aos="fade-left">
-                    <img src="assets/images/products/nylon-gears.jpeg" alt="Nylon Gears"
+                    <img src="assets/images/products/nylon-gears.webp" alt="Nylon Gears" width="400" height="140"
                         style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                    <img src="assets/images/products/jig-fixtures.png" alt="Jig Fixtures"
+                    <img src="assets/images/products/jig-fixtures.webp" alt="Jig Fixtures" width="400" height="140"
                         style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                    <img src="assets/images/products/plastic-machine-parts.jpg" alt="Plastic Parts"
+                    <img src="assets/images/products/plastic-machine-parts.webp" alt="Plastic Parts" width="400"
+                        height="140"
                         style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
-                    <img src="assets/images/products/peek-sheet.jpg" alt="PEEK Sheet"
+                    <img src="assets/images/products/peek-sheet.webp" alt="PEEK Sheet" width="400" height="140"
                         style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
                 </div>
             </div>
@@ -339,45 +348,75 @@
         <div class="marquee-wrapper">
             <div class="marquee-track" id="marqueeTrack">
                 <!-- Set 1 -->
-                <div class="client-logo-box"><img src="assets/images/clients/motherson.svg" alt="Motherson Group"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/terex.svg" alt="Terex"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/jamna.svg" alt="Jamna Auto Industries">
-                </div>
-                <div class="client-logo-box"><img src="assets/images/clients/cnh.svg" alt="CNH Industrial"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/unilever.svg" alt="Unilever"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/patanjali.svg" alt="Patanjali"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/ace.svg" alt="ACE Cranes"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/bosch.svg" alt="Bosch"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/siemens.svg" alt="Siemens"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/tata.svg" alt="Tata"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/dewalt.svg" alt="DeWalt"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/sandvik.svg" alt="Sandvik"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/abb.svg" alt="ABB"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/schneider.svg" alt="Schneider Electric">
-                </div>
-                <div class="client-logo-box"><img src="assets/images/clients/honeywell.svg" alt="Honeywell"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/skf.svg" alt="SKF"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/atlas.svg" alt="Atlas Copco"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/motherson.svg" alt="Motherson Group"
+                        width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/terex.svg" alt="Terex" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/jamna.svg" alt="Jamna Auto Industries"
+                        width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/cnh.svg" alt="CNH Industrial" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/unilever.svg" alt="Unilever" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/patanjali.svg" alt="Patanjali" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/ace.svg" alt="ACE Cranes" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/bosch.svg" alt="Bosch" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/siemens.svg" alt="Siemens" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/tata.svg" alt="Tata" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/dewalt.svg" alt="DeWalt" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/sandvik.svg" alt="Sandvik" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/abb.svg" alt="ABB" width="120" height="60"
+                        loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/schneider.svg" alt="Schneider Electric"
+                        width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/honeywell.svg" alt="Honeywell" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/skf.svg" alt="SKF" width="120" height="60"
+                        loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/atlas.svg" alt="Atlas Copco" width="120"
+                        height="60" loading="lazy"></div>
                 <!-- Duplicate for seamless loop -->
-                <div class="client-logo-box"><img src="assets/images/clients/motherson.svg" alt="Motherson Group"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/terex.svg" alt="Terex"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/jamna.svg" alt="Jamna Auto Industries">
-                </div>
-                <div class="client-logo-box"><img src="assets/images/clients/cnh.svg" alt="CNH Industrial"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/unilever.svg" alt="Unilever"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/patanjali.svg" alt="Patanjali"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/ace.svg" alt="ACE Cranes"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/bosch.svg" alt="Bosch"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/siemens.svg" alt="Siemens"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/tata.svg" alt="Tata"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/dewalt.svg" alt="DeWalt"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/sandvik.svg" alt="Sandvik"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/abb.svg" alt="ABB"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/schneider.svg" alt="Schneider Electric">
-                </div>
-                <div class="client-logo-box"><img src="assets/images/clients/honeywell.svg" alt="Honeywell"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/skf.svg" alt="SKF"></div>
-                <div class="client-logo-box"><img src="assets/images/clients/atlas.svg" alt="Atlas Copco"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/motherson.svg" alt="Motherson Group"
+                        width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/terex.svg" alt="Terex" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/jamna.svg" alt="Jamna Auto Industries"
+                        width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/cnh.svg" alt="CNH Industrial" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/unilever.svg" alt="Unilever" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/patanjali.svg" alt="Patanjali" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/ace.svg" alt="ACE Cranes" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/bosch.svg" alt="Bosch" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/siemens.svg" alt="Siemens" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/tata.svg" alt="Tata" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/dewalt.svg" alt="DeWalt" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/sandvik.svg" alt="Sandvik" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/abb.svg" alt="ABB" width="120" height="60"
+                        loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/schneider.svg" alt="Schneider Electric"
+                        width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/honeywell.svg" alt="Honeywell" width="120"
+                        height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/skf.svg" alt="SKF" width="120" height="60"
+                        loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/atlas.svg" alt="Atlas Copco" width="120"
+                        height="60" loading="lazy"></div>
             </div>
         </div>
     </section>
@@ -583,7 +622,8 @@
             <div class="footer-grid">
                 <div>
                     <a href="index.html" class="logo footer-logo">
-                        <img src="assets/images/jps logo.png" alt="JPS Engineering Logo" style="height: 50px;">
+                        <img src="assets/images/jps-logo.webp" alt="JPS Engineering Logo" style="height: 50px;"
+                            width="207" height="50" loading="lazy">
                     </a>
                     <p class="footer-desc">
                         Your trusted partner for high-quality engineering materials and components.
@@ -698,8 +738,8 @@
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script>
         AOS.init({
             duration: 800,
