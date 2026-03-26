@@ -12,14 +12,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy via SSH
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-rlgoDzvc -i --delete"
-          REMOTE_HOST: ${{ secrets.VPS_HOST }}
-          REMOTE_USER: ${{ secrets.VPS_USERNAME }}
-          TARGET: "/var/www/html/jps"
-          EXCLUDE: "/.git/, /.github/, /node_modules/"
+      - name: Copy files via SCP
+        uses: appleboy/scp-action@master
         with:
-          remote_password: ${{ secrets.VPS_PASSWORD }}
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          source: "."
+          target: "/var/www/html/jps"
+          rm: true
